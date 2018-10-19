@@ -23,8 +23,8 @@ public class TDistinctWordsMain {
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(ex2.StopWordsMapper.class);
-        job.setReducerClass(ex2.StopWordsReducer.class);
+        job.setMapperClass(ex2.TDistinctWordsMapper.class);
+        job.setReducerClass(ex2.TDistinctWordsReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
