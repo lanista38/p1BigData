@@ -17,14 +17,14 @@ public class TDistinctWordsMain {
             System.exit(-1);
         }
         Job job = new Job();
-        job.setJarByClass(ex1.TDistinctWordsMain.class);
+        job.setJarByClass(ex2.TDistinctWordsMain.class);
         job.setJobName("Count TweetsbyUsr");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(ex1.StopWordsMapper.class);
-        job.setReducerClass(ex1.StopWordsReducer.class);
+        job.setMapperClass(ex2.StopWordsMapper.class);
+        job.setReducerClass(ex2.StopWordsReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);

@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>bigdataHadoop.ex2</groupId>
-    <artifactId>ex1</artifactId>
+    <artifactId>ex2</artifactId>
 
     <version>1.0-SNAPSHOT</version>
     <name>ex2</name>
@@ -60,7 +60,7 @@
         </dependency>
     </dependencies>
     <build>
-    <finalName>p1-${project.version}</finalName>
+    <finalName>ex2-${project.version}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
