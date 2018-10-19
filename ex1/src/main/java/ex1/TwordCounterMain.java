@@ -17,14 +17,14 @@ public class TwordCounterMain {
         }
         //Job Creation and Args setup
         Job job = new Job();
-        job.setJarByClass(p1.TwordCounterMain.class);
+        job.setJarByClass(ex1.TwordCounterMain.class);
         job.setJobName("Count TweetsbyUsr");
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
         //Calls to mapper and reducer
-        job.setMapperClass(p1.TwordCounterMapper.class);
-        job.setReducerClass(p1.TwordCounterReducer.class);
+        job.setMapperClass(ex1.TwordCounterMapper.class);
+        job.setReducerClass(ex1.TwordCounterReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
